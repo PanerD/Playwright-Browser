@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust the space between elements */
+}
+
+#urlInput {
+    position: absolute;
+    top: 0;
+    width: 60%; /* Adjust based on your preference */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 150px; /* Distance from the top */
+}
+
+button{
+    width: 100px; /* Adjust width of buttons and input fields */
+}
+
+input{
+    width: 300px; /* Adjust width of buttons and input fields */
+}
+
+.paragraph1 {
+    margin-top: -200px;
+    text-align: left; /* Aligns text to the left */
+    line-height: 1.6; /* Increases space between lines; adjust as needed */
+}
+
+.paragraph2 {
+    margin-top: 0px;
+    text-align: left; /* Aligns text to the left */
+    line-height: 1.6; /* Increases space between lines; adjust as needed */
+    font-weight: bold;
+}

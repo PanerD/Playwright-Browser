@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickCloak</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <div class="controls">
+        <input type="text" id="urlInput" placeholder="Enter a URL">
+        <button id="openUrl">Browse</button>
+        <input type="text" id="userAgentInput" placeholder="Enter a custom User-Agent">
+        <input type="text" id="localeInput" placeholder="Enter a custom locale (e.g., en-US,en)">
+        <input type="text" id="timezoneInput" placeholder="Enter a custom timezone (e.g., Europe/Berlin)">
+    </div>
+    <script src="renderer.js"></script>
+    <a href="#" id="aboutLink">Instructions</a>
+    <script>
+        document.getElementById('aboutLink').addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default anchor action
+            window.location.href = 'about.html'; // Change the window location to navigate
+        });
+    </script>
+</body>
+</html>

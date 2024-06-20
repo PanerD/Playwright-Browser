@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickCloak</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Instructions</h1>
+    </header>
+    <p class="paragraph1">
+        This software uniquely combines the powerful web automation capabilities of Playwright with the versatile Electron framework, 
+        to provide a common browser fingerprint. You have the option to change the userAgent if the current most common one 
+        (the default) becomes obsolete, or the locale and timezone if you want to better blend in on country specific websites. 
+    </p>
+    <p class="paragraph2">
+        Leave everything blank to select the default settings.
+    </p>
+    <a href="#" id="indexLink">Back</a>
+    <script>
+        document.getElementById('indexLink').addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default anchor action
+            window.location.href = 'index.html'; // Change the window location to navigate
+        });
+    </script>
+</body>
+</html>
